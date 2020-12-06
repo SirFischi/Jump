@@ -1,3 +1,5 @@
+package Movement;
+
 public class Position {
     private double x,y;
 
@@ -13,7 +15,11 @@ public class Position {
     public double getY() { return y; }
 
     public void move(Vector vector) {
-        this.x += vector.getxComponent();
-        this.y += vector.getyComponent();
+        this.x += vector.getXcomponent();
+        this.y += vector.getYcomponent();
+    }
+
+    public void setX(double x) {
+        this.x = x;
     }
 }
